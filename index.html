@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
     <title>Reporte de Análisis de Estructuras de Red Eléctrica</title>
 </head>
 <body>
@@ -29,7 +38,26 @@
     <div class="Texto">Se inspeccionaron las redes COT04010 y LST OVI 73510 COT Administradas por CFE que se encuentran en el área cercana a la presa el Oviachic.</div>
 
     <div class="Texto">En este mapa se pueden ver ambas polilíneas de redes, también los puntos de las estructuras. Dar click a los círculos en los mapas para ver detalles</div>
-    Inserte mapa
+
+    <div id="mapid"></div>
+    
+    <style>
+    #mapid {
+    height: 180px;
+    </style>
+
+    <script>
+    let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYWxiZXJ0b2hmIiwiYSI6ImNrZnZvcXUxMzE0YXQydHFxMmF1bDZxYW0ifQ.gXwNXawPreK9wZ7WzLFIgA'
+    }).addTo(mymap);
+    </script>
 
     <div class="Subtitulo">2.2) Imágenes tomadas con Drones</div>
     <div class="Texto">Aquí se muestran las ubicaciones geográficas extraídas de los metadatos de las imágenes de dónde fueron capturadas con ambas cámaras con el drone, en Violeta las imágenes tomadas con la Cámara de color real (RGB) y en Rojo las tomadas con la cámara Termica (FLIR). Dar click a los círculos en los mapas para ver detalles</div>
