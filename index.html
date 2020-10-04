@@ -8,53 +8,53 @@
 </head>
 <body>
     <div class="arriba">Reporte de Análisis de Estructuras de Red Eléctrica</div>
-    <nav>
-        <a class="itemMenu" href="index.html">1) Introducción</a>
-        <a class="itemMenu" href="index.html">2) Mapas</a>
-        <a class="itemMenu" href="index.html">2.1) Red inspeccionada</a>
-        <a class="itemMenu" href="index.html">2.2) Imágenes tomadas con Drones</a>
-        <a class="itemMenu" href="index.html">2.3) Mapa de Imágenes con Anomalías</a>
-        <a class="itemMenu" href="index.html">3) Descarga de Reportes</a>
-        <a class="itemMenu" href="index.html">COT04010</a>
-        <a class="itemMenu" href="index.html">LST-OVI-73510</a>
-        <a class="itemMenu" href="index.html">3.1) Ejemplo de Anomalías Encontradas</a>
-        <a class="itemMenu" href="index.html">3.2) Estructura 2730</a>
-        <a class="itemMenu" href="index.html">4) Análisis en Tiempo Real Simultáneo</a>
-        <a class="itemMenu" href="index.html">5) Video Explicativo del Proyecto</a>
-    </nav>
-    <div class="Titulo">1) Introducción </div>
+    <ul>
+        <li><a class="indice" href="#introducción">1) Introducción</a></li>
+        <li><a class="indice" href="#mapas">2) Mapas</a></li>
+        <li><a class="indice" href="#red_inspeccionada">  2.1) Red inspeccionada</a></li> 
+        <li><a class="indice" href="#imagenes_tomadas_con_drones">  2.2) Imágenes tomadas con Drones</a></li>  
+        <li><a class="indice" href="#mapa_de_imagenes_con_anomalias">  2.3) Mapa de Imágenes con Anomalías</a></li>
+        <li><a class="indice" href="#descarga_de_reportes">3) Descarga de Reportes</a></li>
+        <li><a class="indice" href="#COT04010">  COT04010</a></li>
+        <li><a class="indice" href="#LST_OVI_73510">  LST-OVI-73510</a></li>
+        <li><a class="indice" href="#ejemplo_de_anomalias_encontradas">  3.1) Ejemplo de Anomalías Encontradas</a></li>
+        <li><a class="indice" href="#estructura_2730">  3.2) Estructura 2730</a></li>
+        <li><a class="indice" href="#analisis_en_tiempo_real_simultaneo">4) Análisis en Tiempo Real Simultáneo</a></li>
+        <li><a class="indice" href="#video_explicativo_del_proyecto">5) Video Explicativo del Proyecto</a></li>
+    </ul>
+    <div class="Titulo" id="introducción">1) Introducción </div>
     <div>Este es un reporte de inspección de la red de distribución de energía eléctrica de CFE en el Sur de Sonora realizado por Vehículo aéreo no tripulado equipado con Cámara RGB y Cámara térmica FLIR. Las imágenes RGB se analizan con inteligencia artificial y segmentacipara detección de posibles anomalías en las estructuras y también se analizan con segmentación para encontrar posibles problemas con vegetación. Las imágenes térmicas se analizan con filtros gaussianos para detectar posibles puntos calientes. </div>
-    <div class="Titulo">2) Mapas</div>
-    <div class="Subtitulo">2.1) Red inspeccionada</div>
+    <div class="Titulo" id="mapas">2) Mapas</div>
+    <div class="Subtitulo" id="red_inspeccionada">2.1) Red inspeccionada</div>
     <div class="Texto">Se inspeccionaron las redes COT04010 y LST OVI 73510 COT Administradas por CFE que se encuentran en el área cercana a la presa el Oviachic.</div>
 
     <div class="Texto">En este mapa se pueden ver ambas polilíneas de redes, también los puntos de las estructuras. Dar click a los círculos en los mapas para ver detalles</div>
     Inserte mapa
 
-    <div class="Subtitulo">2.2) Imágenes tomadas con Drones</div>
+    <div class="Subtitulo" id="imagenes_tomadas_con_drones">2.2) Imágenes tomadas con Drones</div>
     <div class="Texto">Aquí se muestran las ubicaciones geográficas extraídas de los metadatos de las imágenes de dónde fueron capturadas con ambas cámaras con el drone, en Violeta las imágenes tomadas con la Cámara de color real (RGB) y en Rojo las tomadas con la cámara Termica (FLIR). Dar click a los círculos en los mapas para ver detalles</div>
     Inserte mapa
 
-    <div class="Subtitulo">2.3) Mapa de Imágenes con Anomalías</div>
+    <div class="Subtitulo" id="mapa_de_imagenes_con_anomalias">2.3) Mapa de Imágenes con Anomalías</div>
     <div class="Texto">Mapa de estructuras de electricidad en los cuales se detectaron anomalías usando inteligencia artificial, dar click a los círculos en los mapas para ver detalles.</div>
     Inserte mapa
 
     <div class="Texto">En esta tabla se muestra la liga a seguir de la imagen color real, La imagen segmentada, La imagen detectada por el modelo de inteligencia artificial, la imagen térmica y los reportes individuales.</div>
     Inserte tabla 
 
-    <div class="Titulo">3) Descarga de Reportes</div>
+    <div class="Titulo" id="descarga_de_reportes">3) Descarga de Reportes</div>
     
-    <div class="Subtitulo">COT04010</div>
+    <div class="Subtitulo" id="COT04010">COT04010</div>
     <div class="Texto">Inserte link Download COT04010.pdf</div>
     
-    <div class="Subtitulo">LST-OVI-73510</div>
+    <div class="Subtitulo" id="LST_OVI_73510">LST-OVI-73510</div>
     <div class="Texto">Inserte link Download LST-OVI-73510.pdf</div>
     
-    <div class="Subtitulo">3.1) Ejemplo de Anomalías Encontradas</div>
+    <div class="Subtitulo" id="ejemplo_de_anomalias_encontradas">3.1) Ejemplo de Anomalías Encontradas</div>
     <div class="Texto">Aquí se muestra un ejemplo de 3 imágenes de la estructura 2730 en la cual se detectó una anomalía, las 3 imágenes son: Color real RGB, Imagen con detección por modelo de inteligencia artificial e imagen Térmica FLIR
 
     
-    <div class="Subtitulo">3.2) Estructura 2730</div>
+    <div class="Subtitulo" id="estructura_2730">3.2) Estructura 2730</div>
     <div class="Texto">Imagen original Imagen RGB Color real tomada por la cámara del drone.</div>
     Inserte imagen
 
@@ -70,11 +70,11 @@
     <div class="Texto">Imagen Térmica FLIR analizada para puntos fríos y calientes.</div>
     Inserte imagen
 
-    <div class="Titulo">4) Análisis en Tiempo Real Simultáneo</div>
+    <div class="Titulo" id="red_inspeccionada">4) Análisis en Tiempo Real Simultáneo</div>
     <div class="Texto">Aquí se tiene el análisis realizado simultáneamente con ambas cámaras RGB y FLIR Térmica</div>
     Inserte video 
 
-    <div class="Titulo">5) Video Explicativo del Proyecto</div>
+    <div class="Titulo" id="video_explicativo_del_proyecto">5) Video Explicativo del Proyecto</div>
     Inserte video
     </div>
 </body>
