@@ -48,7 +48,7 @@
     </style>
 
     <script>
-    let mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    let mymap = L.map('mapid').setView([18.5771346940, -70.0466857410], 13);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -62,11 +62,51 @@
 
     <div class="Subtitulo" id="imagenes_tomadas_con_drones">2.2) Imágenes tomadas con Drones</div>
     <div class="Texto">Aquí se muestran las ubicaciones geográficas extraídas de los metadatos de las imágenes de dónde fueron capturadas con ambas cámaras con el drone, en Violeta las imágenes tomadas con la Cámara de color real (RGB) y en Rojo las tomadas con la cámara Termica (FLIR). Dar click a los círculos en los mapas para ver detalles</div>
-    Inserte mapa
+    
+    <div id="mapid1"></div>
+
+    <style>
+    #mapid1 {
+    height: 180px;
+    }
+    </style>
+
+    <script>
+    let mymap1 = L.map('mapid1').setView([18.5771346940, -70.0466857410], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYWxiZXJ0b2hmIiwiYSI6ImNrZnZvcXUxMzE0YXQydHFxMmF1bDZxYW0ifQ.gXwNXawPreK9wZ7WzLFIgA'
+    }).addTo(mymap1);
+    </script>
 
     <div class="Subtitulo" id="mapa_de_imagenes_con_anomalias">2.3) Mapa de Imágenes con Anomalías</div>
     <div class="Texto">Mapa de estructuras de electricidad en los cuales se detectaron anomalías usando inteligencia artificial, dar click a los círculos en los mapas para ver detalles.</div>
-    Inserte mapa
+    
+    <div id="mapid2"></div>
+
+    <style>
+    #mapid2 {
+    height: 180px;
+    }
+    </style>
+
+    <script>
+    let mymap2 = L.map('mapid2').setView([18.5771346940, -70.0466857410], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoiYWxiZXJ0b2hmIiwiYSI6ImNrZnZvcXUxMzE0YXQydHFxMmF1bDZxYW0ifQ.gXwNXawPreK9wZ7WzLFIgA'
+    }).addTo(mymap2);
+    </script>
 
     <div class="Texto">En esta tabla se muestra la liga a seguir de la imagen color real, La imagen segmentada, La imagen detectada por el modelo de inteligencia artificial, la imagen térmica y los reportes individuales.</div>
     Inserte tabla 
