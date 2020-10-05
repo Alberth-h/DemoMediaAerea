@@ -19,8 +19,7 @@ body {
     padding: 1%;
 }
 
-
-.itemMenu{
+.itemMenu {
     position: relative;
     text-align: center;
     /*background-color: black;*/
@@ -31,3 +30,39 @@ body {
     padding: 1%;
     font-size: 20px;
 }
+
+
+/*Tabla*/
+
+table {
+    width: 1300px;
+}
+
+th {
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 129, 197);
+}
+
+td {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #D3D3D3;
+}
+
+
+/*Tabla*/
